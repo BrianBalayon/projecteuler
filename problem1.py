@@ -13,12 +13,12 @@ def main():
     threes = 0
     fives = 0
     for i in range(1, 1000):
-        if not i % 3:
-            threes += i
         '''
         Using else-if to avoid adding the same number twice.
-        Ex. 15, 75, and 150 are multiples of 3 and 5
+        Ex. 15, 75, and 150 are multiples of 3 and 5.
         '''
+        if not i % 3:
+            threes += i
         elif not i % 5:
             fives += i
     print("Sum of Multiples of 3: ", threes)
